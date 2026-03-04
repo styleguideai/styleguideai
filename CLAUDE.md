@@ -37,6 +37,7 @@ Instructions:
        or open a PR to add them to
        https://github.com/styleguideai/styleguideai/tree/main/product/
       "
+  10. Check if you need to teorder the issues in the review report file in order to group issues by the same sentence. If you need to reorder any issues, reorder them and renumber all issues in the review report file.
 
 ---
 
