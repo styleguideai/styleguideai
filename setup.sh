@@ -60,16 +60,11 @@ done
 
 echo "All files processed."
 
-# # Create skill file
-# skill_dir=".gemini/skills/review"
-# skill_file="$skill_dir/SKILL.md"
-
-# if [[ ! -d "$skill_dir" ]]; then
-#     mkdir -p "$skill_dir"
-# fi
-
-# if [[ ! -f "$skill_file" ]]; then
-#     touch "$skill_file"
-# fi
-
-# echo "Follow the instructions in ~/styleguideai/blob/main/CLAUDE.md" >> "$skill_file"
+# Install the ocp skill locally
+if [[ -f "./skill-repo-detector-ocp.skill" ]]; then
+    echo "Installing ocp skill..."
+    gemini skills install ./skill-repo-detector-ocp.skill --scope workspace --consent
+    echo "Skill installed. Please remember to run '/skills reload' in your Gemini CLI session."
+else
+    echo "Warning: skill-repo-detector-ocp.skill not found. Skipping skill installation."
+fi
