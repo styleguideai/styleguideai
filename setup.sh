@@ -4,11 +4,11 @@
 #   chmod +x setup.sh
 #   ./setup.sh
 
-echo "Please upload .pdf file(s) to the current working directory:"
+echo -e "\033[0;31mPlease upload all of your style guides that are .pdf file(s) to the current working directory:"
 echo "  $(pwd)"
 echo ""
 
-read -p "When you uploaded the file(s), press Enter: "
+read -p "When you uploaded the file(s), press \033[1;37;40mEnter\033[0;31m: \033[0m"
 
 # Find all PDF files in the current directory
 pdf_files=(*.pdf)
