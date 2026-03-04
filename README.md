@@ -6,14 +6,20 @@ Prerequisites: You have locally installed Claude Code or Gemini CLI as whitelist
 
 To start using AI for peer reviews, set it up as follows:
 
-1. Clone this repository to your home directory:
+1. Use the command line to clone this repository to your home directory:
    
-   `$ git clone origin git@github.com:styleguideai/styleguideai.git`
+   ```terminal
+   git clone origin git@github.com:styleguideai/styleguideai.git
+   ```
 
 3. Add permissions to the setup script:
    
-   `$ chmod +x setup.sh`
+   ```terminal
+   chmod +x setup.sh
+   ```
 
 5. Run the setup script:
    
-   `$ bash setup.sh`
+   ```terminal
+   bash setup.sh
+   ```
