@@ -11,6 +11,7 @@ Instructions:
   3. For your review output, use the format specified in ./review-report-format.md
   4. Perform the requested review
   5. When your review is complete, append your review output to this file
+  6. Do not add any `#.. Review` headings when appending your review output to this file
 
 # Instructions for Peer Reviews
 
