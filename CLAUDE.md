@@ -31,8 +31,14 @@ Instructions:
   6. Act according to the trigger phrase "ssg review"
   7. Act according to the trigger phrase "vale review"
   8. Act according to the trigger phrase "mod docs review"
-  9. For the product-specific style review, prompt the user for the product name by offering the user to select among the subdirectory names in ./product
-  10. Use the files in the subdirectory in ./product/* that the user has selected
+  9. For product-specific guidance, check if there is a product entry for this documentation repository in ./product. If product-specific guidance for this product exists in ./product, then use it. If not, then prompt the user as follows:
+      "
+       I did not find any product-specific style guides.
+       You can provide them to me now in the prompt
+       or open a PR to add them to
+       https://github.com/styleguideai/styleguideai/tree/main/product/.
+      "
+  11. Use the files in the subdirectory in ./product/* that the user has selected
 
 ---
 
@@ -58,7 +64,7 @@ Instructions:
 
 ---
 
-# Claude Instructions for SSG Reviews
+# Instructions for SSG Reviews
 
 ## Trigger Phrases
 
