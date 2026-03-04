@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git show:*)",
+      "WebFetch(domain:redhat-documentation.github.io)",
+      "Bash(lynx:*)",
+      "Bash(vale sync:*)",
+      "Bash(vale:*)",
+      "WebFetch(domain:raw.githubusercontent.com)"
+    ]
+  }
+}
