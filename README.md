@@ -30,7 +30,17 @@ To start using AI for peer reviews, set it up as follows:
 
 1. Run `claude` or `gemini` from the `styleguideai` directory.
 
-2. Specify what you want it to review for you.
+2. Optional: If a command for your product has been added to this repository as a skill, you can enter that command into the prompt to skip any mentions of which repository you are working with.
+
+   Example:
+
+   ```terminal
+   /ocp
+   ```
+
+   If this command is available for your product, and if you run this command, in the examples in the next step, you don't have to input `in ~/openshift-docs` into the prompt after running `/ocp`.
+
+3. Specify what you want it to review for you.
    
    Examples:
 
