@@ -31,7 +31,7 @@ Instructions:
   6. Act according to the trigger phrase "ssg review"
   7. Act according to the trigger phrase "vale review"
   8. Act according to the trigger phrase "mod docs review"
-  9. For the product-specific style review, prompt the user for the product name by offering the user to select among the subdirectory names in ./product/*
+  9. For the product-specific style review, prompt the user for the product name by offering the user to select among the subdirectory names in ./product
   10. Use the files in the subdirectory in ./product/* that the user has selected
 
 ---
