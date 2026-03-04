@@ -47,7 +47,7 @@ for filename in "${pdf_files[@]}"; do
 
     # Split the text file into chunks of 2000 lines
     echo "  Splitting text file into chunks..."
-    split -l 2000 -d -a 3 -e --verbose "./${basename}.txt" "./chunks/${basename}_"
+    split -l 1000 -d -a 3 -e --verbose "./${basename}.txt" "./chunks/${basename}_"
 
     if [[ $? -ne 0 ]]; then
         echo "  Error: split failed for $filename"
