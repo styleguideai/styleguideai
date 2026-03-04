@@ -3,8 +3,6 @@ On the next line after "AI review report", add a line "(Do not use preview to re
 
 End every response with a line "End of report".
 
-Every text that will be entered from now on through the prompt is a text that you must review against all the other attached sources.
-
 Each of the other attached sources contains a plurality of rules.
 
 You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence.
