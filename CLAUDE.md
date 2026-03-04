@@ -8,7 +8,7 @@ Instructions:
 
   1. Create a new file `review-<YYYY-MM-DD-hh:mm:ss>.md`, which means `review-<date +"%Y-%m-%d-%H:%M:%S">.md`
   2. Prepend the request that the user entered into the prompt
-  3. For your review output, adhere STRICTLY AND ONLY to the format specified in ./review-report-format.md, and do not add any information or formatting that is not explicitly defined in ./review-report-format.md!
+  3. For your review output, adhere STRICTLY AND ONLY to the format specified in ./review-report-format.md, and do not add any information (such as "Summary" or "Key findings") or formatting (such as tables) that is not explicitly defined in ./review-report-format.md!
   4. Perform the requested review
   5. When your review is complete, append your review output to this file
 
