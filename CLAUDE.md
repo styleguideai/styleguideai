@@ -33,7 +33,6 @@ Instructions:
   8. Act according to the trigger phrase "mod docs review"
   9. For the product-specific style review, prompt the user for the product name by offering the user to select among the subdirectory names in ./product/*
   10. Use the files in the subdirectory in ./product/* that the user has selected
-  11. When the review report file is complete, review it for multiple occurences of any sentences, and group all occurences of a sentence together by using the template on lines 23-39 in review-report-format.md
 
 ---
 
