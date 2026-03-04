@@ -24,74 +24,13 @@ Instructions:
 
   1. Read and execute the section # Claude Instructions about the Review Report File
   2. For each of the trigger phrases in this list, do not create a new file, instead append the report to the file that you created in the previous step of this list of instructions ("1. Read and execute the section # Claude Instructions about the Review Report File")
-  3. Act according to the trigger phrase "quick review"
-  4. Act according to the trigger phrase "vale review"
-  5. Act according to the trigger phrase "mod docs review"
-  6. Act according to the trigger phrase "pdf review"
-  7. Act according to the trigger phrase "ssg review"
-  8. Prompt the user for the product name by offering the user to select among the subdirectory names in ./product/*
+  3. Each of the style guide sources contains a plurality of rules. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence.
+  4. Act according to the trigger phrase "pdf review"
+  5. Act according to the trigger phrase "ssg review"
+  6. Act according to the trigger phrase "vale review"
+  7. Act according to the trigger phrase "mod docs review"
+  8. For the product-specific style review, prompt the user for the product name by offering the user to select among the subdirectory names in ./product/*
   9. Use the files in the subdirectory in ./product/* that the user has selected
-
----
-
-# Instructions for Quick Reviews
-
-## Trigger Phrases
-
-When the user says "quick review"
-
-## Task: Quick Review
-
-Input:
-
-  - Content to review: as specified in the prompt
-
-Instructions:
-
-  1. Read and execute the section # Claude Instructions about the Review Report File
-  2. Review the grammar, spelling, and punctuation in the provided content
-  3. Append the results to the review report file
-
----
-
-# Instructions for Vale Reviews
-
-## Trigger Phrases
-
-When the user says "vale review"
-
-## Task: Vale Review
-
-Input:
-
-  - Content to review: as specified in the prompt
-
-Instructions:
-
-  1. Read and execute the section # Claude Instructions about the Review Report File
-  2. On the content that the user has specified in the prompt, update `vale`, run the `vale --output line` command, analyze its output, and ignore false positives.
-  3. Read https://raw.githubusercontent.com/jhradilek/asciidoctor-dita-vale/refs/heads/main/README.md
-  4. Append the results to the review report file
-
----
-
-# Instructions for Mod Docs Reviews 
-
-## Trigger Phrases
-
-When the user says "mod docs review"
-
-## Task: Mod Docs Review
-
-Input:
-
-  - Content to review: as specified in the prompt
-
-Instructions:
-
-  1. Read and execute the section # Claude Instructions about the Review Report File
-  2. Review the content specified in the prompt against all style rules in the local clone of `modular-docs.git`.
-  3. Append the results to the review report file
 
 ---
 
@@ -110,7 +49,7 @@ Input:
 
 Instructions:
 
-  1. Read and execute the section # Claude Instructions about the Review Report File
+  1. Read and execute the section # Instructions about the Review Report File
   2. Review the provided content against each PDF Style guide chunk file sequentially (one chunk at a time)
   3. Append the results to the review report file
 
@@ -130,6 +69,68 @@ Input:
 
 Instructions:
 
-  1. Read and execute the section # Claude Instructions about the Review Report File
+  1. Read and execute the section # Instructions about the Review Report File
   2. Review the content specified in the prompt against all style rules in the local clone of `supplementary-style-guide.git`.
+  3. Append the results to the review report file
+
+---
+
+# Instructions for Vale Reviews
+
+## Trigger Phrases
+
+When the user says "vale review"
+
+## Task: Vale Review
+
+Input:
+
+  - Content to review: as specified in the prompt
+
+Instructions:
+
+  1. Check if `vale` command is installed. If the `vale` command is not installed, abort and ask the user to install Vale.
+  2. Read and execute the section # Instructions about the Review Report File
+  3. On the content that the user has specified in the prompt, update `vale`, run the `vale --output line` command, analyze its output, and ignore false positives.
+  4. Read https://raw.githubusercontent.com/jhradilek/asciidoctor-dita-vale/refs/heads/main/README.md
+  5. Append the results to the review report file
+
+---
+
+# Instructions for Quick Reviews
+
+## Trigger Phrases
+
+When the user says "quick review"
+
+## Task: Quick Review
+
+Input:
+
+  - Content to review: as specified in the prompt
+
+Instructions:
+
+  1. Read and execute the section # Instructions about the Review Report File
+  2. Review the grammar, spelling, and punctuation in the provided content
+  3. Append the results to the review report file
+
+---
+
+# Instructions for Mod Docs Reviews 
+
+## Trigger Phrases
+
+When the user says "mod docs review"
+
+## Task: Mod Docs Review
+
+Input:
+
+  - Content to review: as specified in the prompt
+
+Instructions:
+
+  1. Read and execute the section # Instructions about the Review Report File
+  2. Review the content specified in the prompt against all style rules in the local clone of `modular-docs.git`.
   3. Append the results to the review report file
