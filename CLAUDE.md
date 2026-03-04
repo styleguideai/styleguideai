@@ -137,6 +137,6 @@ Input:
 Instructions:
 
   1. Read and execute the section # Instructions about the Review Report File
-  2. Review the content specified in the prompt against all style rules in the local clone of `modular-docs.git`
+  2. Read the following source by using the following command: $ lynx -dump -nolist https://redhat-documentation.github.io/modular-docs/
   3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
   4. Append the results to the review report file
