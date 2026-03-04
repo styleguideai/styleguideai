@@ -22,7 +22,7 @@ When the user says "peer review"
 
 Instructions:
 
-  1. Read and execute the section # Claude Instructions about the Review Report File
+  1. Read and execute the section # Instructions about the Review Report File
   2. Skip re-reading any sources that you have already read and have in your context
   3. For each of the trigger phrases in this list, do not create a new file, instead append the report to the file that you created in the previous step of this list of instructions ("1. Read and execute the section # Claude Instructions about the Review Report File")
   4. Each of the style guide sources contains a plurality of rules. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence.
