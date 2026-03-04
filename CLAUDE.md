@@ -1,4 +1,4 @@
-This file can be used by humans and a locally installed Claude Code and Gemini CLI!
+This file is intended for a locally installed Claude Code and Gemini CLI.
 
 # Instructions about the Review Report File
 
