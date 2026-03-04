@@ -35,11 +35,11 @@ To start using AI for peer reviews, set it up as follows:
    Examples:
 
    ```terminal
-   peer review the changes in the last commit in ~/openshift-docs
+   peer review last commit in ~/openshift-docs
    ```
    
    ```terminal
-   peer review the changes in commit <commit_sha> in ~/openshift-docs
+   peer review commit <commit_sha> in ~/openshift-docs
    ```
 
    ```terminal
