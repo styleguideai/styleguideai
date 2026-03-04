@@ -38,7 +38,6 @@ Instructions:
        or open a PR to add them to
        https://github.com/styleguideai/styleguideai/tree/main/product/
       "
-  11. Group, reorder, and renumber issues so that issues relating to the same sentence appear one after the other in accordance with instructions in ./review-report-format.md
 
 ---
 
