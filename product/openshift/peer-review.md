@@ -1,4 +1,4 @@
-# Claude Instructions for OCP Reviews
+# Instructions for Openshift Product Peer Reviews
 
 ## Trigger Phrases
 
@@ -91,3 +91,14 @@ https://raw.githubusercontent.com/openshift/openshift-docs/refs/heads/main/contr
 https://raw.githubusercontent.com/openshift/openshift-docs/refs/heads/main/contributing_to_docs/contributing.adoc
 
 https://raw.githubusercontent.com/openshift/openshift-docs/refs/heads/main/contributing_to_docs/contributing_user_stories.adoc
+
+## Instructions
+
+  1. Read and execute the section # Claude Instructions about the Review Report File
+  2. When the user requests a peer review, identify the files or PR to review
+  3. Read the documentation content thoroughly
+  4. Fetch and review the additional product-specific style guide files listed above
+  5. Go through each checklist item systematically
+  6. Report findings for each item clearly with specific examples and line references
+  7. Provide a summary of what passes and what needs attention
+  8. Format the output as a checklist with clear pass/fail indicators
