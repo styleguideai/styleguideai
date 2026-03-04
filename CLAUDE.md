@@ -51,7 +51,8 @@ Instructions:
 
   1. Read and execute the section # Instructions about the Review Report File
   2. Review the provided content against each PDF Style guide chunk file sequentially (one chunk at a time)
-  3. Append the results to the review report file
+  3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
+  4. Append the results to the review report file
 
 ---
 
@@ -70,8 +71,10 @@ Input:
 Instructions:
 
   1. Read and execute the section # Instructions about the Review Report File
-  2. Review the content specified in the prompt against all style rules in the local clone of `supplementary-style-guide.git`.
-  3. Append the results to the review report file
+  2. Read https://redhat-documentation.github.io/supplementary-style-guide/ssg.md
+  3. Review the content specified in the prompt against all style rules in ssg.md
+  4. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
+  5. Append the results to the review report file
 
 ---
 
@@ -93,7 +96,8 @@ Instructions:
   2. Read and execute the section # Instructions about the Review Report File
   3. On the content that the user has specified in the prompt, update `vale`, run the `vale --output line` command, analyze its output, and ignore false positives.
   4. Read https://raw.githubusercontent.com/jhradilek/asciidoctor-dita-vale/refs/heads/main/README.md
-  5. Append the results to the review report file
+  5. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
+  6. Append the results to the review report file
 
 ---
 
@@ -113,7 +117,8 @@ Instructions:
 
   1. Read and execute the section # Instructions about the Review Report File
   2. Review the grammar, spelling, and punctuation in the provided content
-  3. Append the results to the review report file
+  3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
+  4. Append the results to the review report file
 
 ---
 
@@ -132,5 +137,6 @@ Input:
 Instructions:
 
   1. Read and execute the section # Instructions about the Review Report File
-  2. Review the content specified in the prompt against all style rules in the local clone of `modular-docs.git`.
-  3. Append the results to the review report file
+  2. Review the content specified in the prompt against all style rules in the local clone of `modular-docs.git`
+  3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
+  4. Append the results to the review report file
