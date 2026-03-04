@@ -59,3 +59,15 @@ To start using AI for peer reviews, set it up as follows:
    ```terminal
    merge review <github_pr_link>
    ```
+
+**TIP**: Optional: For a fast check of only the grammar, spelling, and punctuation, ask for a `quick review` in the prompt.
+
+   Examples:
+
+   ```terminal
+   do a quick review of the unstaged changes in ~/openshift-docs
+   ```
+
+   ```terminal
+   do a quick review of the staged changes in ~/openshift-docs
+   ```
