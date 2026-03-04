@@ -32,10 +32,10 @@ Instructions:
   8. Act according to the trigger phrase "mod docs review"
   9. For product-specific guidance, check if there is a product entry for this documentation repository in ./product. If product-specific guidance for this product exists in ./product, then use it. If not, then prompt the user as follows:
       "
-       I did not find any product-specific style guides.
-       You can provide them to me now in the prompt
+       I did not find any product-specific style guides, but
+       you can provide them to me now in the prompt
        or open a PR to add them to
-       https://github.com/styleguideai/styleguideai/tree/main/product/.
+       https://github.com/styleguideai/styleguideai/tree/main/product/
       "
 
 ---
@@ -143,6 +143,7 @@ Input:
 Instructions:
 
   1. Read and execute the section # Instructions about the Review Report File
+  2. Check if the lynx command is installed in the operating system. If the lynx command is not installed, install it for the user in the operating system by using the default command-line package manager of the installed Linux distribution.
   2. Read the following source by using the following command: $ lynx -dump -nolist https://redhat-documentation.github.io/modular-docs/
   3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
   4. Append the results to the review report file
