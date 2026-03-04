@@ -1,10 +1,10 @@
-### AI reviewer for technical writers
+## AI reviewer for technical writers
 
 Prerequisites: You have locally installed Claude Code or Gemini CLI as whitelisted by your corporation.
 
 **TIP:** Even better, use both Claude Code and Gemini CLI because based on a benchmark test (from February 2026) we found that the Gemini 3 model that Gemini CLI uses significantly outperforms Claude's models in catching style guide rule violations.
 
-#### Setup
+### Setup
 
 To start using AI for peer reviews, set it up as follows:
 
@@ -26,7 +26,7 @@ To start using AI for peer reviews, set it up as follows:
    bash setup.sh
    ```
 
-# Use
+### Use
 
 1. Run `claude` or `gemini` from the `styleguideai` directory.
 
