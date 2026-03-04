@@ -26,18 +26,40 @@ Instructions:
   2. Skip re-reading any sources that you have already read and have in your context
   3. For each of the trigger phrases in this list, do not create a new file, instead append the report to the file that you created in the previous step of this list of instructions ("1. Read and execute the section # Claude Instructions about the Review Report File")
   4. Each of the style guide sources contains a plurality of rules. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence.
-  5. Act according to the trigger phrase "pdf review"
-  6. Act according to the trigger phrase "ssg review"
-  7. Act according to the trigger phrase "vale review"
-  8. Act according to the trigger phrase "mod docs review"
-  9. For product-specific guidance, check if there is a product entry for this documentation repository in ./product. If product-specific guidance for this product exists in ./product, then use it. If not, then prompt the user as follows:
+  5. Act according to the trigger phrase "quick review"
+  6. Act according to the trigger phrase "pdf review"
+  7. Act according to the trigger phrase "ssg review"
+  8. Act according to the trigger phrase "vale review"
+  9. Act according to the trigger phrase "mod docs review"
+  10. For product-specific guidance, check if there is a product entry for this documentation repository in ./product. If product-specific guidance for this product exists in ./product, then interrupt the task and prompt the user as follows:
       "
        I did not find any product-specific style guides, but
        you can provide them to me now in the prompt
        or open a PR to add them to
        https://github.com/styleguideai/styleguideai/tree/main/product/
       "
-  10. Check if you need to teorder the issues in the review report file in order to group issues by the same sentence. If you need to reorder any issues, reorder them and renumber all issues in the review report file.
+  11. Group, reorder, and renumber issues so that issues relating to the same sentence appear one after the other in accordance with instructions in ./review-report-format.md
+
+---
+
+# Instructions for Quick Reviews
+
+## Trigger Phrases
+
+When the user says "quick review"
+
+## Task: Quick Review
+
+Input:
+
+  - Content to review: as specified in the prompt
+
+Instructions:
+
+  1. Read and execute the section # Instructions about the Review Report File
+  2. Review the grammar, spelling, and punctuation in the provided content
+  3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
+  4. Append the results to the review report file, but do not add any heading such as `## Quick Review`
 
 ---
 
@@ -59,7 +81,7 @@ Instructions:
   1. Read and execute the section # Instructions about the Review Report File
   2. Review the provided content against each PDF Style guide chunk file sequentially (one chunk at a time)
   3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
-  4. Append the results to the review report file
+  4. Append the results to the review report file, but do not add any heading such as `## PDF Style Review`
 
 ---
 
@@ -69,7 +91,7 @@ Instructions:
 
 When the user says "ssg review"
 
-## Task: Quick Review
+## Task: SSG Review
 
 Input:
 
@@ -81,7 +103,7 @@ Instructions:
   2. Read https://redhat-documentation.github.io/supplementary-style-guide/ssg.md
   3. Review the content specified in the prompt against all style rules in ssg.md
   4. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
-  5. Append the results to the review report file
+  5. Append the results to the review report file, but do not add any heading such as `## SSG Review`
 
 ---
 
@@ -104,28 +126,7 @@ Instructions:
   3. On the content that the user has specified in the prompt, update `vale`, run the `vale --output line` command, analyze its output, and ignore false positives.
   4. Read https://raw.githubusercontent.com/jhradilek/asciidoctor-dita-vale/refs/heads/main/README.md
   5. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
-  6. Append the results to the review report file
-
----
-
-# Instructions for Quick Reviews
-
-## Trigger Phrases
-
-When the user says "quick review"
-
-## Task: Quick Review
-
-Input:
-
-  - Content to review: as specified in the prompt
-
-Instructions:
-
-  1. Read and execute the section # Instructions about the Review Report File
-  2. Review the grammar, spelling, and punctuation in the provided content
-  3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
-  4. Append the results to the review report file
+  6. Append the results to the review report file, but do not add any heading such as `## Vale Review`
 
 ---
 
@@ -147,4 +148,4 @@ Instructions:
   2. Check if the lynx command is installed in the operating system. If the lynx command is not installed, install it for the user in the operating system by using the default command-line package manager of the installed Linux distribution.
   2. Read the following source by using the following command: $ lynx -dump -nolist https://redhat-documentation.github.io/modular-docs/
   3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
-  4. Append the results to the review report file
+  4. Append the results to the review report file, but do not add any heading such as `## Mod Docs Review`
