@@ -9,7 +9,7 @@ To start using AI for peer reviews, set it up as follows:
 1. Use the command line to clone this repository to your home directory:
    
    ```terminal
-   git clone origin git@github.com:styleguideai/styleguideai.git
+   cd ~ && git clone origin git@github.com:styleguideai/styleguideai.git
    ```
 
 3. Add permissions to the setup script:
