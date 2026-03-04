@@ -1,13 +1,11 @@
 ---
 name: ocp
-description:
-  Treat all user prompts in the context of the local clone of the ~/openshift-docs repository.
+description: Focuses all operations and file searches on the local clone of the OpenShift documentation repository at ~/openshift-docs. Use when working on openshift-docs content or when the user explicitly requests the OCP context.
 ---
 
-# Repo Detector OCP
+# OpenShift Documentation Repository Focus
 
-This skill focuses the agent on a specific documentation repository that the writer is working with so that the writer does not need to specify this repository every time.
+Apply the following rules to all operations when this skill is active:
 
-## Workflow
-
-If the user enters the `/ocp` command, treat all user prompts in the context of the local clone of the ~/openshift-docs repository.
+1. Use `~/openshift-docs` as the base directory for all file operations and shell commands.
+2. Resolve all relative file paths against the `~/openshift-docs` root.
