@@ -26,39 +26,17 @@ Instructions:
   2. Skip re-reading any sources that you have already read and have in your context
   3. For each of the trigger phrases in this list, do not create a new file, instead append the report to the file that you created in the previous step of this list of instructions ("1. Read and execute the section # Claude Instructions about the Review Report File")
   4. Each of the style guide sources contains a plurality of rules. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence.
-  5. Act according to the trigger phrase "quick review"
-  6. Act according to the trigger phrase "pdf review"
-  7. Act according to the trigger phrase "ssg review"
-  8. Act according to the trigger phrase "vale review"
-  9. Act according to the trigger phrase "mod docs review"
-  10. For product-specific guidance, check if there is a product entry for this documentation repository in ./product. If product-specific guidance for this product exists in ./product, then interrupt the task and prompt the user as follows:
+  5. Act according to the trigger phrase "pdf review"
+  6. Act according to the trigger phrase "ssg review"
+  7. Act according to the trigger phrase "vale review"
+  8. Act according to the trigger phrase "mod docs review"
+  9. For product-specific guidance, check if there is a product entry for this documentation repository in ./product. If product-specific guidance for this product exists in ./product, then interrupt the task and prompt the user as follows:
       "
        I did not find any product-specific style guides, but
        you can provide them to me now in the prompt
        or open a PR to add them to
        https://github.com/styleguideai/styleguideai/tree/main/product/
       "
-
----
-
-# Instructions for Quick Reviews
-
-## Trigger Phrases
-
-When the user says "quick review"
-
-## Task: Quick Review
-
-Input:
-
-  - Content to review: as specified in the prompt
-
-Instructions:
-
-  1. Read and execute the section # Instructions about the Review Report File
-  2. Review the grammar, spelling, and punctuation in the provided content
-  3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
-  4. Append the results to the review report file, but do not add any heading such as `## Quick Review`
 
 ---
 
@@ -126,6 +104,27 @@ Instructions:
   4. Read https://raw.githubusercontent.com/jhradilek/asciidoctor-dita-vale/refs/heads/main/README.md
   5. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
   6. Append the results to the review report file, but do not add any heading such as `## Vale Review`
+
+---
+
+# Instructions for Quick Reviews
+
+## Trigger Phrases
+
+When the user says "quick review"
+
+## Task: Quick Review
+
+Input:
+
+  - Content to review: as specified in the prompt
+
+Instructions:
+
+  1. Read and execute the section # Instructions about the Review Report File
+  2. Review the grammar, spelling, and punctuation in the provided content
+  3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
+  4. Append the results to the review report file, but do not add any heading such as `## Quick Review`
 
 ---
 
