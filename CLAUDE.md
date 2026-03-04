@@ -6,7 +6,7 @@ This file is intended for a locally installed Claude Code and Gemini CLI.
 
 Instructions:
 
-  1. Create a new file `review-<YYYY-MM-DD-hh:mm:ss>.md`, which means `review-<date +"%Y-%m-%d-%H:%M:%S">.md`
+  1. Create a new file `review-<YYYY-MM-DD-hh:mm:ss>.md`, which means `review-<date +"%Y-%m-%d-%H:%M:%S">.md`. Use the date command to obtain the date and time values for the file name.
   2. Prepend the request that the user entered into the prompt
   3. For your review output, adhere STRICTLY AND ONLY to the format specified in ./review-report-format.md, and do not add any information (such as "Summary" or "Key findings") or formatting (such as tables) that is not explicitly defined in ./review-report-format.md!
   4. Perform the requested review
