@@ -15,7 +15,7 @@ To start using AI for peer reviews, set it up as follows:
 3. Add permissions to the setup script:
    
    ```terminal
-   chmod +x setup.sh
+   cd styleguideai && chmod +x setup.sh
    ```
 
 5. Run the setup script:
