@@ -50,19 +50,7 @@ Instructions:
 
   1. Read and execute the section # Claude Instructions about the Review Report File
   2. Review the grammar, spelling, and punctuation in the provided content
-  3. Document your findings in the results file with:
-    - A clear section header
-    - All violations found, including:
-        - Specific line number(s) where the issue occurs
-      - The problematic text
-      - Define the violation
-      - Suggested correction
-  4. After reviewing all of the provided content, append a comprehensive summary section that includes:
-    - All critical issues that must be fixed
-    - Recommendations for improvements
-    - Document statistics (total issues found, categorized by severity)
-    - Overall compliance assessment
-	- Final summary of all findings
+  3. Append the results to the review report file
 
 ---
 
@@ -83,20 +71,7 @@ Instructions:
   1. Read and execute the section # Claude Instructions about the Review Report File
   2. On the content that the user has specified in the prompt, update `vale`, run the `vale --output line` command, analyze its output, and ignore false positives.
   3. Read https://raw.githubusercontent.com/jhradilek/asciidoctor-dita-vale/refs/heads/main/README.md
-  4. Read 
-  5. Document your findings in the results file with:
-    - A clear section header
-    - All violations found, including:
-        - Specific line number(s) where the issue occurs
-      - The problematic text
-      - Define the violation
-      - Suggested correction
-  6. After reviewing all of the provided content, append a comprehensive summary section that includes:
-    - All critical issues that must be fixed
-    - Recommendations for improvements
-    - Document statistics (total issues found, categorized by severity)
-    - Overall compliance assessment
-	- Final summary of all findings
+  4. Append the results to the review report file
 
 ---
 
@@ -116,19 +91,7 @@ Instructions:
 
   1. Read and execute the section # Claude Instructions about the Review Report File
   2. Review the content specified in the prompt against all style rules in the local clone of `modular-docs.git`.
-  3. Document your findings in the results file with:
-    - A clear section header
-    - All violations found, including:
-        - Specific line number(s) where the issue occurs
-      - The problematic text
-      - Define the violation
-      - Suggested correction
-  4. After reviewing all of the provided content, append a comprehensive summary section that includes:
-    - All critical issues that must be fixed
-    - Recommendations for improvements
-    - Document statistics (total issues found, categorized by severity)
-    - Overall compliance assessment
-	- Final summary of all findings
+  3. Append the results to the review report file
 
 ---
 
@@ -149,19 +112,7 @@ Instructions:
 
   1. Read and execute the section # Claude Instructions about the Review Report File
   2. Review the provided content against each PDF Style guide chunk file sequentially (one chunk at a time)
-  3. For each chunk, document your findings in the results file with:
-    - A clear section header identifying which chunk was reviewed and its main topic area
-    - All style violations found, including:
-        - Specific line number(s) where the issue occurs
-      - The problematic text
-      - Why it violates the style guide (with reference to the specific rule)
-      - Suggested correction
-  4. After reviewing all chunks, append a comprehensive summary section that includes:
-    - All critical issues that must be fixed
-    - Recommendations for improvements
-    - Document statistics (total issues found, categorized by severity)
-    - Overall compliance assessment
-	- Final summary of all findings
+  3. Append the results to the review report file
 
 ---
 
@@ -181,16 +132,4 @@ Instructions:
 
   1. Read and execute the section # Claude Instructions about the Review Report File
   2. Review the content specified in the prompt against all style rules in the local clone of `supplementary-style-guide.git`.
-  3. Document your findings in the results file with:
-    - A clear section header
-    - All violations found, including:
-        - Specific line number(s) where the issue occurs
-      - The problematic text
-      - Define the violation
-      - Suggested correction
-  4. After reviewing all of the provided content, append a comprehensive summary section that includes:
-    - All critical issues that must be fixed
-    - Recommendations for improvements
-    - Document statistics (total issues found, categorized by severity)
-    - Overall compliance assessment
-	- Final summary of all findings
+  3. Append the results to the review report file
