@@ -37,7 +37,6 @@ Instructions:
        or open a PR to add them to
        https://github.com/styleguideai/styleguideai/tree/main/product/.
       "
-  11. Use the files in the subdirectory in ./product/* that the user has selected
 
 ---
 
