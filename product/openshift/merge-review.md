@@ -1,4 +1,4 @@
-# Instructions for Merge Reviews
+# Instructions for Openshift Product Merge Reviews
 
 ## Trigger Phrases
 
