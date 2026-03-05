@@ -32,7 +32,7 @@ To start using AI for peer reviews, set it up as follows:
 
 ### Getting an AI review of your own work
 
-The local AI app, Claude Code or Gemini, can quickly peer-review your work whenever and as often as you need.
+The local AI app can quickly peer-review your work as many times as you need.
 
 ```
 TIP: If Gemini CLI is whitelisted by your corporation, use it for producing review reports. A February 2026 benchmark test found that the Gemini 3 model significantly outperforms Claude's models in catching style guide rule violations.
@@ -81,7 +81,7 @@ TIP: For a fast check of only the grammar, spelling, and punctuation, ask for a 
 
 ### Fixing the issues discovered in the AI review
 
-You can use the local AI app to fix the issues discovered in the AI review report.
+The local AI app can update the files to fix issues discovered in the AI review.
 
 Prerequisites:
 
