@@ -101,7 +101,6 @@ TIP: If Claude Code is whitelisted by your corporation, use Claude Code for fixi
 
 2. The local AI app shows you the issue. Read the issue. Evaluate the suggestion, and type one of the following:
    ```terminal
-   Let's go through the issues one by one.
    apply # just one word is sufficient
    skip # just one word is sufficient
    <modify_as_...> # explain the changes that you want to be made to the AI suggestion or make your own, alternative suggestion
