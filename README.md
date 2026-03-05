@@ -1,8 +1,8 @@
 ## AI reviewer for technical writers
 
-Use the local AI app as your reviewer, but treat it as a quick, well-informed, but error-prone remote intern that you must micromanage.
+Use a locally installed AI app as your reviewer, but treat it as a quick, well-informed, but error-prone remote intern that you must micromanage.
 
-Prerequisites: You have locally installed Claude Code or Gemini CLI as whitelisted by your corporation.
+Prerequisites: You have installed Claude Code or Gemini CLI as whitelisted by your corporation.
 
 ```
 TIP: Use both Claude Code and Gemini CLI but for different tasks.
