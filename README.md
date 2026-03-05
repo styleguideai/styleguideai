@@ -2,7 +2,7 @@
 
 Use a locally installed AI app as your reviewer, but treat it as a quick, well-informed, but error-prone remote intern that you must micromanage.
 
-Prerequisites: You have installed Claude Code or Gemini CLI as whitelisted by your corporation.
+Prerequisites: You have installed Claude Code or Gemini CLI as whitelisted by your project.
 
 ```
 TIP: Use both Claude Code and Gemini CLI but for different tasks.
@@ -35,7 +35,7 @@ To start using AI for peer reviews, set it up as follows:
 The local AI app can quickly peer-review your work as many times as you need.
 
 ```
-TIP: If Gemini CLI is whitelisted by your corporation, use it for producing review reports. A February 2026 benchmark test found that the Gemini 3 model significantly outperforms Claude's models in catching style guide rule violations.
+TIP: If Gemini CLI is whitelisted by your project, use it for producing review reports. A February 2026 benchmark test found that the Gemini 3 model significantly outperforms Claude's models in catching style guide rule violations.
 ```
 
 1. Run `claude` or `gemini` from the `styleguideai` directory.
@@ -90,7 +90,7 @@ Prerequisites:
 - If you use a different AI app to fix issues, start a new session, and ask the app to read the review report file.
 
 ```
-TIP: If Claude Code is whitelisted by your corporation, use Claude Code for fixing the issues listed in the review report file.
+TIP: If Claude Code is whitelisted by your project, use Claude Code for fixing the issues listed in the review report file.
 ```
 
 1. Ask the local AI app to go through the issues one by one:
