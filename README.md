@@ -1,63 +1,47 @@
-## AI reviewer for technical writers
+# styleguideai
 
-Use a locally installed AI app as your reviewer, but treat it as a quick, well-informed, but error-prone remote intern that you must micromanage.
+An AI-powered peer review system for technical writers.
 
-Prerequisites: You have installed Claude Code or Gemini CLI as whitelisted by your project.
+> [!CAUTION]
+> The AI reviewer is fast and well-informed, but treat its suggestions as a starting point that requires your judgment and oversight.
 
-```
-TIP: Use both Claude Code and Gemini CLI but for different tasks.
-```
+## Understand styleguideai
 
-### Setting up your local AI app for reviews
+styleguideai uses Claude Code and Gemini CLI to review your documentation against style guides and best practices. You specify the content to review — a commit, a PR, staged changes — and the AI checks it against multiple style guide sources, then produces a structured report with numbered issues, file locations, and suggested fixes.
 
-To start using AI for peer reviews, set it up as follows:
+Under the hood, PDF style guides are converted into chunked text files that the AI can process. Each review mode targets a different set of rules, and a full peer review runs all of them in sequence. See [Review modes](#review-modes) for details.
 
-1. Use the command line to clone this repository to your home directory:
-   
+## Set up styleguideai
+
+Prerequisites: You have installed [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or [Gemini CLI](https://github.com/google-gemini/gemini-cli), as approved by your project for use with proprietary content.
+
+1. Clone this repository to your home directory:
+
    ```terminal
    cd ~ && git clone git@github.com:styleguideai/styleguideai.git
    ```
 
-3. Add permissions to the setup script:
-   
+2. Run the setup script:
+
    ```terminal
-   cd styleguideai && chmod +x setup.sh
+   cd styleguideai && bash setup.sh
    ```
 
-5. Run the setup script:
-   
-   ```terminal
-   bash setup.sh
-   ```
+## Get an AI review
 
-### Getting an AI review of your own work
-
-The local AI app can quickly peer-review your work as many times as you need.
-
-```
-TIP: If Gemini CLI is whitelisted by your project, use it for producing review reports. A February 2026 benchmark test found that the Gemini 3 model significantly outperforms Claude's models in catching style guide rule violations.
-```
+> [!TIP]
+> Use both Claude Code and Gemini CLI but for different tasks. If Gemini CLI is approved by your project, use it for producing review reports. A February 2026 benchmark test found that the Gemini 3 model significantly outperforms Claude's models in catching style guide rule violations.
 
 1. Run `claude` or `gemini` from the `styleguideai` directory.
 
-2. Optional: If a command for your product has been added to this repository as a skill, you can enter that command into the prompt to skip any mentions of which repository you are working with.
+2. Specify what you want reviewed.
 
-   Example:
-
-   ```terminal
-   /ocp
-   ```
-
-   If this command is available, you do not need to input `in ~/openshift-docs` in the following examples.
-
-3. Specify what you want it to review for you.
-   
    Examples:
 
    ```terminal
    peer review last commit in ~/openshift-docs
    ```
-   
+
    ```terminal
    peer review commit <commit_sha> in ~/openshift-docs
    ```
@@ -70,42 +54,60 @@ TIP: If Gemini CLI is whitelisted by your project, use it for producing review r
    merge review <github_pr_link>
    ```
 
-   The local AI app will save a review report in the same directory.
+   The AI saves a review report in the same directory.
 
-```
-TIP: For a fast check of only the grammar, spelling, and punctuation, ask for a `quick review` in the prompt. For example:
-- do a quick review of unstaged changes in ~/openshift-docs
-- do a quick review of staged changes in ~/openshift-docs
+> [!TIP]
+> If a `/product` skill exists for your repository (for example, `/ocp` for openshift-docs), enter that command at the prompt to skip specifying the repository path in each review request.
 
-```
+> [!TIP]
+> For a fast check of only the grammar, spelling, and punctuation, ask for a `quick review` in the prompt. For example:
+> - `do a quick review of unstaged changes in ~/openshift-docs`
+> - `do a quick review of staged changes in ~/openshift-docs`
 
-### Fixing the issues discovered in the AI review
+## Fix issues from the review
 
-The local AI app can update the files to fix issues discovered in the AI review.
+> [!TIP]
+> If Claude Code is approved by your project, use Claude Code for fixing the issues listed in the review report file.
 
-Prerequisites:
+To fix the issues that the AI found:
 
-- If you choose to use the same local AI app to fix the issues that it found in its review, you can simply continue the session, and it still remembers all the issues.
+- If you use the same AI app that produced the review, continue the session — it still remembers all the issues.
+- If you use a different AI app, start a new session and ask the app to read the review report file.
 
-- If you use a different AI app to fix issues, start a new session, and ask the app to read the review report file.
+1. Ask the AI to go through the issues one by one:
 
-```
-TIP: If Claude Code is whitelisted by your project, use Claude Code for fixing the issues listed in the review report file.
-```
-
-1. Ask the local AI app to go through the issues one by one:
-
-   Example:
    ```terminal
    Let's go through the issues one by one.
    Ask me for every issue: Apply, skip, or modify?
    ```
 
-2. The local AI app shows you the issue. Read the issue. Evaluate the suggestion, and type one of the following:
+2. For each issue, evaluate the suggestion and type one of the following:
+
    ```terminal
-   apply # just one word is sufficient
-   skip # just one word is sufficient
-   <modify_as_...> # explain the changes that you want to be made to the AI suggestion or make your own, alternative suggestion
+   apply
+   skip
+   <modify_as_...>  # explain the changes you want or make your own suggestion
    ```
 
 3. When you have reviewed all the issues, manually review, commit, and push the changes in Git.
+
+## Review modes
+
+| Mode | Trigger phrase | What it checks |
+|------|---------------|----------------|
+| **Peer review** | `peer review` | Comprehensive review against all applicable style guide sources (PDF chunks, SSG, Vale, mod docs, and product-specific rules) |
+| **Quick review** | `quick review` | Grammar, spelling, and punctuation only |
+| **PDF review** | `pdf review` | Style rules extracted from PDF style guide chunks in `./chunks/` |
+| **SSG review** | `ssg review` | Red Hat Supplementary Style Guide compliance |
+| **Vale review** | `vale review` | Vale linting tool output (requires Vale installed locally) |
+| **Mod docs review** | `mod docs review` | Red Hat modular documentation structure compliance |
+| **Merge review** | `merge review` | High-level review for merge request readiness (product-specific) |
+
+## Key files
+
+| File | Purpose |
+|------|---------|
+| `CLAUDE.md` / `GEMINI.md` | AI instructions for review generation |
+| `review-report-format.md` | Standardized review report output format |
+| `product/` | Product-specific review checklists and style rules |
+| `.claude/skills/` | Named skills for product-specific context switching |
