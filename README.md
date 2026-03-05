@@ -79,9 +79,13 @@ TIP: For a fast check of only the grammar, spelling, and punctuation, ask for a 
 
 ### Fixing the issues discovered in the AI review
 
-If you choose to use the same local AI app to fix the issues that it found in its review, you can simply continue the session, and it still remembers all the issues.
+You can use the local AI app to fix the issues discovered in the AI review report.
 
-If you choose to use the other local AI app, such as Claude Code if you used Gemini CLI to produce the review report, then start a new session and ask it to read the review report file.
+Prerequisites:
+
+- If you choose to use the same local AI app to fix the issues that it found in its review, you can simply continue the session, and it still remembers all the issues.
+
+- If you choose to use the other local AI app, such as Claude Code if you used Gemini CLI to produce the review report, then start a new session and ask it to read the review report file.
 
 ```
 TIP: If Claude Code is whitelisted by your corporation, use Claude Code for fixing the issues listed in the review report file.
