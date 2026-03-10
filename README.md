@@ -30,6 +30,10 @@ To start using AI for peer reviews, set it up as follows:
    bash setup.sh
    ```
 
+   ```
+   TIP: When the script asks you to upload your style guides as PDF files, avoid uploading documents that may have either overlapping guidance or organizational guidance that is not useful to an LLM.
+   ```
+
 ### Getting an AI review of your own work
 
 The local AI app can quickly peer-review your work as many times as you need.
@@ -70,14 +74,13 @@ TIP: If Gemini CLI is whitelisted by your project, use it for producing review r
    merge review <github_pr_link>
    ```
 
+   ```
+   TIP: For a fast check of only the grammar, spelling, and punctuation, ask for a `quick review` in the prompt. For example:
+   - do a quick review of unstaged changes in ~/openshift-docs
+   - do a quick review of staged changes in ~/openshift-docs
+   ```
+
    The local AI app will save a review report in the same directory.
-
-```
-TIP: For a fast check of only the grammar, spelling, and punctuation, ask for a `quick review` in the prompt. For example:
-- do a quick review of unstaged changes in ~/openshift-docs
-- do a quick review of staged changes in ~/openshift-docs
-
-```
 
 ### Fixing the issues discovered in the AI review
 
