@@ -144,7 +144,7 @@ Instructions:
 
   1. Read and execute the section # Instructions about the Review Report File
   2. Check if the lynx command is installed in the operating system. If the lynx command is not installed, install it for the user in the operating system by using the default command-line package manager of the installed Linux distribution.
-  2. Read the following source by using the following command: $ lynx -dump -nolist https://redhat-documentation.github.io/modular-docs/
-  3. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
-  4. There is one rule that you must ignore because it is outdated but the source has not been updated yet: "The title of a procedure module is a gerund phrase".
-  5. Append the results to the review report file, but do not add any heading such as `## Mod Docs Review`
+  3. Read the following source by using the following command: $ lynx -dump -nolist https://redhat-documentation.github.io/modular-docs/
+  4. You must review every sentence of the entered text separately, sentence by sentence for violations of all rules (issues) in the sentence
+  5. There is one rule that you must ignore because it is outdated but the source has not been updated yet: "The title of a procedure module is a gerund phrase".
+  6. Append the results to the review report file, but do not add any heading such as `## Mod Docs Review`
