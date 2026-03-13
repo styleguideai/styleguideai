@@ -82,7 +82,7 @@ TIP: If Gemini CLI is whitelisted by your project, use it for producing review r
    - do a quick review of staged changes in ~/openshift-docs
    ```
 
-   The local AI app will save a review report in the same directory.
+   The local AI app saves a review report in the same directory.
 
 ### Fixing the issues discovered in the AI review
 
