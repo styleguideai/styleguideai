@@ -4,7 +4,9 @@ This README describes a local AI app setup and workflow for reviews and fixes.
 
 Using a local AI app offers two advantages: the local AI app has the functionality to save a review report file locally and then edit the files on your behalf and under your close supervision in response to the AI review that a local AI app has produced.
 
-Use a locally installed AI app as your reviewer, but treat it as a quick, well-informed, but error-prone remote intern that you must micromanage.
+```
+TIP: Use a locally installed AI app as your reviewer, but treat it as a quick, well-informed, but error-prone remote intern that you must micromanage.
+```
 
 Prerequisites: You have installed Claude Code or Gemini CLI as whitelisted by your project.
 
