@@ -37,7 +37,7 @@ To start using AI for peer reviews, set it up as follows:
    ```
 
    ```
-   TIP: When the script asks you to upload your style guides as PDF files, avoid uploading documents that may have either overlapping guidance or organizational guidance that is not useful to an LLM.
+   TIP: When the script prompts you to upload your style guides as PDF files, avoid uploading documents that may have either overlapping guidance or organizational guidance that is not useful to an LLM.
    ```
 
 ### Getting an AI review of your own work
