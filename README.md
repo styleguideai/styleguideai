@@ -11,7 +11,7 @@ Using Claude Code for reviews offers two advantages: it has the functionality to
 
 `styleguideai` uses Claude Code to review your documentation against style guides and best practices. You specify the content to review: a commit, PR, unstaged changes, or staged changes. Claude Code checks it against multiple style guide sources and then produces a structured report with numbered issues, file locations, violated style rules, and suggested fixes.
 
-Under the hood, PDF style guides are converted into chunked text files that Claude Code can process. Each review mode targets a different set of rules, and a full peer review runs all of them in sequence. See [Review modes](#review-modes) for details.
+Under the hood, PDF style guides, such as [AsciiDoc Specification](https://docs.asciidoctor.org/asciidoc/latest/_exports/asciidoc-pre-spec.pdf), are converted into chunked text files that Claude Code can process. Each review mode targets a different set of rules, and a full peer review runs all of them in sequence. See [Review modes](#review-modes) for details.
 
 ## Set up `styleguideai`
 
