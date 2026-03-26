@@ -1,22 +1,18 @@
-## AI reviewer for technical writers
+## Claude Code reviewer for technical writers
 
-This README describes a local AI app setup and workflow for reviews and fixes.
+You can use Claude Code to review your docs contributions.
 
-Using a local AI app offers two advantages: the local AI app has the functionality to save a review report file locally and then edit the files on your behalf and under your close supervision in response to the AI review that a local AI app has produced.
+Using Claude Code for reviews offers two advantages: it has the functionality to save a review report file locally and then edit the files for you under your close supervision.
 
-```
-TIP: Use a locally installed AI app as your reviewer, but treat it as a quick, well-informed, but error-prone remote intern that you must micromanage.
-```
-
-Prerequisites: You have installed Claude Code or Gemini CLI as whitelisted by your project.
+Prerequisites: You have installed Claude Code.
 
 ```
-TIP: Use both Claude Code and Gemini CLI but for different tasks.
+TIP: Treat Claude Code as a quick, well-informed, but error-prone remote intern that you must micromanage. 
 ```
 
-### Setting up your local AI app for reviews
+### Setting up Claude Code for reviews
 
-To start using AI for peer reviews, set it up as follows:
+To start using Claude Code for reviews, set up a local clone of this repository as follows:
 
 1. Use the command line to clone this repository to your home directory:
    
@@ -40,15 +36,11 @@ To start using AI for peer reviews, set it up as follows:
    TIP: When the script prompts you to upload your style guides as PDF files, avoid uploading documents that may have either overlapping guidance or organizational guidance that is not useful to an LLM.
    ```
 
-### Getting an AI review of your own work
+### Getting a Claude Code review of your own work
 
-The local AI app can quickly peer-review your work as many times as you need.
+Claude Code can quickly peer-review your work as many times as you need.
 
-```
-TIP: If Gemini CLI is whitelisted by your project, use it for producing review reports. A February 2026 benchmark test found that the Gemini 3 model significantly outperforms Claude's models in catching style guide rule violations.
-```
-
-1. Run `claude` or `gemini` from the `styleguideai` directory.
+1. Run `claude` from the `styleguideai` directory.
 
 2. Optional: If a command for your product has been added to this repository as a skill, you can enter that command into the prompt to skip any mentions of which repository you are working with.
 
@@ -60,7 +52,7 @@ TIP: If Gemini CLI is whitelisted by your project, use it for producing review r
 
    If this command is available, you do not need to input `in ~/openshift-docs` in the following examples.
 
-3. Specify what you want it to review for you.
+3. Specify what you want Claude Code to review for you.
    
    Examples:
 
@@ -86,23 +78,25 @@ TIP: If Gemini CLI is whitelisted by your project, use it for producing review r
    - do a quick review of staged changes in ~/openshift-docs
    ```
 
+<<<<<<< HEAD
    The local AI app saves a review report in the same directory.
+=======
+   Claude Code saves a review report in the same directory.
+>>>>>>> b6d0e94 (update README.md to focus exclusively on Claude Code and remove GEMINI.md)
 
-### Fixing the issues discovered in the AI review
+### Fixing the issues discovered by Claude Code in its review
 
-The local AI app can update the files to fix issues discovered in the AI review.
+Claude Code can update the files to fix issues discovered in its review.
 
 Prerequisites:
 
-- If you choose to use the same local AI app to fix the issues that it found in its review, you can simply continue the session, and it still remembers all the issues.
-
-- If you use a different AI app to fix issues, start a new session, and ask the app to read the review report file.
+- Claude Code generated a review report file.
 
 ```
-TIP: If Claude Code is whitelisted by your project, use Claude Code for fixing the issues listed in the review report file.
+TIP: You can simply continue the session, and Claude Code still remembers all the issues. Alternatively, you can start a new session and ask Claude Code to read the review report file that you specify in the prompt by the file name.
 ```
 
-1. Ask the local AI app to go through the issues one by one:
+1. Ask Claude Code to go through the issues one by one:
 
    Example:
    ```terminal
@@ -110,7 +104,7 @@ TIP: If Claude Code is whitelisted by your project, use Claude Code for fixing t
    Ask me for every issue: Apply, skip, or modify?
    ```
 
-2. The local AI app shows you the issue. Read the issue. Evaluate the suggestion, and type one of the following:
+2. Claude Code shows you the issue. Read the issue. Evaluate the suggestion, and type one of the following:
    ```terminal
    apply # just one word is sufficient
    skip # just one word is sufficient
