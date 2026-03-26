@@ -15,7 +15,7 @@ Under the hood, PDF style guides are converted into chunked text files that Clau
 
 ## Set up `styleguideai`
 
-Prerequisites: You have installed [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
+Prerequisite: You have installed [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
 To start using Claude Code for reviews, set up a local clone of this repository as follows:
 
@@ -42,6 +42,7 @@ To start using Claude Code for reviews, set up a local clone of this repository 
 
 ## Get a Claude Code review
 
+Ask Claude Code to review your content and generate a report.
 
 1. Run `claude` from the `styleguideai` directory.
 
@@ -84,11 +85,9 @@ To start using Claude Code for reviews, set up a local clone of this repository 
 
 ## Fix issues from the review
 
-Claude Code is capable of updating your files to fix issues it found.
+Prerequisite: Claude Code has generated a review report file.
 
-Prerequisites:
-
-- Claude Code generated a review report file.
+Use Claude Code to update your files under your close supervision to fix issues it found.
 
 > [!TIP]
 >  You can simply continue the session because Claude Code still remembers all the issues. Alternatively, you can start a new session later and ask Claude Code to read the review report file that you specify in the prompt by the file name.
