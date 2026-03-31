@@ -15,7 +15,7 @@ Under the hood, PDF style guides are converted into chunked text files that Clau
 
 ## Set up `styleguideai`
 
-Prerequisite: You have installed [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
+Prerequisite: You have installed [Claude Code](https://docs.anthropic.com/en/docs/claude-code) in your [terminal](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code) or [IDE](https://code.claude.com/docs/en/vs-code).
 
 To start using Claude Code for reviews, set up a local clone of this repository as follows:
 
