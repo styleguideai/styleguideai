@@ -6,6 +6,9 @@ You can use this command with the following arguments:
 - /pdf-review HEAD~1 - review a commit
 - /pdf-review path/to/file.adoc - review a file
 - /pdf-review - review the latest commit (default)
+
+Note:
+root-level-directory .gitignore must include .claude/commands/chunks/
 -->
 
 # Parallel PDF Style Review Workflow
